@@ -1,0 +1,11 @@
+git_fetch(
+    name = "liburing-2.4.git",
+    repo = "https://github.com/axboe/liburing",
+    rev = "298c083d75ecde5a8833366167b3b6abff0c8d39",
+)
+
+cxx_library(
+    name = "liburing",
+    exported_headers = [":liburing-2.4.git"],
+    visibility = ["PUBLIC"],
+)

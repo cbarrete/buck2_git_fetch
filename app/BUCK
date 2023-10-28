@@ -1,0 +1,5 @@
+cxx_binary(
+    name = "my_binary",
+    srcs = ["main.cpp"],
+    deps = ["//third_party/liburing:liburing"],
+)
